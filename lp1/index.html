@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="30代の婚活、あなたはどの停滞タイプ？3つの質問であなたの婚活スタイルを診断。婚活サブスクのベルロード縁結びサポートで、一人で抱え込まないで。">
+  <meta name="robots" content="noindex, nofollow">
+  <title>30代婚活診断 | あなたの"停滞タイプ"がわかる</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ① ファーストビュー -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-icon">💍</span>
+        <span>30秒で完了</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">30代婚活、</span>
+        <span class="title-line">あなたはどの</span>
+        <span class="title-line highlight">"停滞タイプ"？</span>
+      </h1>
+      <p class="hero-subtitle">
+        <span class="subtitle-icon">✨</span> 3つの質問でわかる婚活診断
+      </p>
+      <div class="hero-image-wrapper">
+        <img src="images/hero.png" alt="婚活を考える30代女性" class="hero-image" loading="eager">
+      </div>
+    </div>
+    <div class="scroll-indicator" id="scrollIndicator">
+      <span class="scroll-text">診断をはじめる</span>
+      <div class="scroll-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M12 4L12 20M12 20L6 14M12 20L18 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ② 診断セクション -->
+  <section id="quiz" class="quiz-section">
+    <div class="section-container">
+      <div class="quiz-progress" id="quizProgress">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <span class="progress-text" id="progressText">Q1 / 3</span>
+      </div>
+
+      <!-- Q1 -->
+      <div class="quiz-card active" id="q1">
+        <div class="quiz-number">Q1</div>
+        <h2 class="quiz-question">最近の婚活で<br>一番近い気持ちは？</h2>
+        <div class="quiz-options">
+          <button class="quiz-option" data-question="1" data-answer="A" id="q1-a">
+            <span class="option-emoji">😰</span>
+            <span class="option-text">周りが結婚して焦る</span>
+          </button>
+          <button class="quiz-option" data-question="1" data-answer="B" id="q1-b">
+            <span class="option-emoji">😮‍💨</span>
+            <span class="option-text">アプリで疲れている</span>
+          </button>
+          <button class="quiz-option" data-question="1" data-answer="C" id="q1-c">
+            <span class="option-emoji">🤔</span>
+            <span class="option-text">動きたいけど決め手がない</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="quiz-card" id="q2">
+        <div class="quiz-number">Q2</div>
+        <h2 class="quiz-question">出会いの場について<br>思うのは？</h2>
+        <div class="quiz-options">
+          <button class="quiz-option" data-question="2" data-answer="A" id="q2-a">
+            <span class="option-emoji">🎭</span>
+            <span class="option-text">本気度がバラバラ</span>
+          </button>
+          <button class="quiz-option" data-question="2" data-answer="B" id="q2-b">
+            <span class="option-emoji">🌡️</span>
+            <span class="option-text">会っても温度差がある</span>
+          </button>
+          <button class="quiz-option" data-question="2" data-answer="C" id="q2-c">
+            <span class="option-emoji">🔍</span>
+            <span class="option-text">そもそも出会いが少ない</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="quiz-card" id="q3">
+        <div class="quiz-number">Q3</div>
+        <h2 class="quiz-question">本音に<br>一番近いのは？</h2>
+        <div class="quiz-options">
+          <button class="quiz-option" data-question="3" data-answer="A" id="q3-a">
+            <span class="option-emoji">💒</span>
+            <span class="option-text">早く結婚したい</span>
+          </button>
+          <button class="quiz-option" data-question="3" data-answer="B" id="q3-b">
+            <span class="option-emoji">💎</span>
+            <span class="option-text">でも妥協はしたくない</span>
+          </button>
+          <button class="quiz-option" data-question="3" data-answer="C" id="q3-c">
+            <span class="option-emoji">🗣️</span>
+            <span class="option-text">誰かに整理してほしい</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ③ 診断結果表示 -->
+  <section id="result" class="result-section" style="display:none;">
+    <div class="section-container">
+      <div class="result-header">
+        <div class="result-confetti" id="confetti"></div>
+        <p class="result-label">あなたの婚活タイプは…</p>
+        <div class="result-type-wrapper">
+          <h2 class="result-type" id="resultType"></h2>
+        </div>
+      </div>
+
+      <div class="result-card" id="resultCard">
+        <div class="result-icon" id="resultIcon"></div>
+        <p class="result-description" id="resultDescription"></p>
+      </div>
+
+      <!-- CTA 1回目 -->
+      <div class="cta-block" id="cta1">
+        <p class="cta-message">あなたに合った婚活の進め方、<br>プロに相談してみませんか？</p>
+        <a href="https://px.a8.net/svt/ejp?a8mat=3BSMW0+1XJZIY+4MPE+5YJRM" class="cta-button" id="ctaButton1"
+          target="_blank" rel="noopener noreferrer sponsored">
+          <span class="cta-pr-badge">PR</span>
+          <span class="cta-button-icon">💌</span>
+          <span class="cta-button-text">ベルロード縁結びサポートの<br>無料相談を確認する</span>
+          <span class="cta-button-arrow">→</span>
+        </a>
+        <p class="cta-note">※ 無料・オンライン完結・月額9,800円〜</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ④ 解決提案 -->
+  <section id="solution" class="solution-section" style="display:none;">
+    <div class="section-container">
+      <div class="solution-message">
+        <div class="message-deco">❝</div>
+        <h2 class="solution-title">一人で抱えなくていい</h2>
+        <div class="message-deco bottom">❞</div>
+      </div>
+
+      <div class="solution-card">
+        <img src="images/consultation.png" alt="ベルロード縁結びサポート 無料相談イメージ" class="solution-image" loading="lazy">
+        <div class="solution-body">
+          <p class="solution-intro">
+            <strong>ベルロード縁結びサポート</strong>は、<br>
+            <span class="text-accent">月額9,800円〜</span>の婚活サブスク。<br>
+            IBJ加盟で<span class="text-accent">約8万人以上</span>の真剣な会員と出会える。
+          </p>
+          <ul class="solution-features">
+            <li>
+              <span class="feature-icon">📱</span>
+              <span>来店不要・オンライン完結</span>
+            </li>
+            <li>
+              <span class="feature-icon">�</span>
+              <span>月額定額制・お見合い料0円</span>
+            </li>
+            <li>
+              <span class="feature-icon">🤝</span>
+              <span>認定仲人のチャットサポート付き</span>
+            </li>
+            <li>
+              <span class="feature-icon">✅</span>
+              <span>全員が身元証明書を提出済み</span>
+            </li>
+            <li>
+              <span class="feature-icon">⏰</span>
+              <span>平均約7ヶ月で成婚</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CTA 2回目 -->
+      <div class="cta-block cta-final" id="cta2">
+        <p class="cta-message-final">まずは気軽に、<br>話を聞いてみるだけでも◎</p>
+        <a href="https://px.a8.net/svt/ejp?a8mat=3BSMW0+1XJZIY+4MPE+5YJRM" class="cta-button cta-button-large"
+          id="ctaButton2" target="_blank" rel="noopener noreferrer sponsored">
+          <span class="cta-pr-badge">PR</span>
+          <span class="cta-button-icon">✨</span>
+          <span class="cta-button-text">公式サイトで<br>無料相談を確認する</span>
+          <span class="cta-button-arrow">→</span>
+        </a>
+        <p class="cta-note">※ 完全無料・たった30秒で完了</p>
+        <div class="cta-trust">
+          <span class="trust-item">🔒 個人情報保護</span>
+          <span class="trust-item">📱 スマホ完結</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑥ フッター -->
+  <footer class="site-footer">
+    <p class="footer-disclaimer">※本ページはプロモーションを含みます。</p>
+    <p class="footer-copyright">© 2026 婚活診断LP</p>
+  </footer>
+
+  <!-- 固定フッターCTA -->
+  <div class="fixed-cta" id="fixedCta" style="display:none;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=3BSMW0+1XJZIY+4MPE+5YJRM" class="fixed-cta-button" id="fixedCtaButton"
+      target="_blank" rel="noopener noreferrer sponsored">
+      <span class="fixed-cta-pr">PR</span>
+      <span class="fixed-cta-icon">💌</span>
+      <span class="fixed-cta-text">無料相談を確認する</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
