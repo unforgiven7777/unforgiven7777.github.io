@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子持ち婚｜子連れ再婚専門の婚活サービス｜初期費用完全無料</title>
+    <meta name="description" content="子持ちだからこそ、理解し合えるパートナーと出会える。初期費用完全無料・専属仲人制・成婚率62.1%の子連れ再婚専門婚活サービス「子持ち婚」">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== ヘッダー ========== -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <div class="logo" id="logo">
+                <span class="logo-icon">💍</span>
+                <span class="logo-text">子持ち婚</span>
+            </div>
+            <a href="https://px.a8.net/svt/ejp?a8mat=4AXLW8+AS2W62+3LOM+1HL85U" target="_blank"
+                rel="noopener noreferrer" class="header-cta-btn" id="header-cta-btn">
+                <span>無料登録</span>
+                <span class="btn-arrow">→</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ========== セクション1: ファーストビュー ========== -->
+    <section class="fv" id="first-view">
+        <div class="fv-overlay"></div>
+        <div class="fv-particles" id="fv-particles"></div>
+        <div class="fv-content">
+            <p class="fv-sub-copy" id="fv-sub-copy">子連れ再婚専門の婚活サービス</p>
+            <h1 class="fv-main-copy" id="fv-main-copy">
+                <span class="fv-line">「子持ちだから…」と、</span>
+                <span class="fv-line fv-line-accent">もう遠慮しなくていい。</span>
+            </h1>
+            <p class="fv-lead" id="fv-lead">
+                同じ境遇を理解してくれるお相手だけが集まる場所で、<br class="sp-only">
+                あなたらしい幸せを見つけませんか？
+            </p>
+
+            <div class="fv-features" id="fv-features">
+                <div class="fv-feature-card" id="fv-feature-1">
+                    <div class="feature-icon">¥0</div>
+                    <div class="feature-label">初期費用<br><strong>完全無料</strong></div>
+                </div>
+                <div class="fv-feature-card" id="fv-feature-2">
+                    <div class="feature-icon">👤</div>
+                    <div class="feature-label">あなた専属の<br><strong>仲人制</strong></div>
+                </div>
+                <div class="fv-feature-card" id="fv-feature-3">
+                    <div class="feature-icon">62.1<small>%</small></div>
+                    <div class="feature-label">業界トップクラス<br><strong>成婚率</strong></div>
+                </div>
+            </div>
+
+            <a href="#quiz-section" class="fv-cta-btn" id="fv-cta-btn">
+                <span class="cta-text">まずは3秒アンケートに回答する</span>
+                <span class="cta-sub">＼ あなたにぴったりの出会いを診断 ／</span>
+            </a>
+        </div>
+        <div class="fv-scroll-indicator" id="fv-scroll">
+            <span>SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========== セクション2: 選択方式（3秒アンケート） ========== -->
+    <section class="quiz-section" id="quiz-section">
+        <div class="container">
+            <div class="section-badge" id="quiz-badge">簡単3秒アンケート</div>
+            <h2 class="section-title" id="quiz-title">
+                あなたの<span class="highlight">現在の状況</span>に<br>一番近いものはどれですか？
+            </h2>
+            <p class="section-lead" id="quiz-lead">1つ選んでタップしてください</p>
+
+            <!-- 選択肢 -->
+            <div class="quiz-options" id="quiz-options">
+                <button class="quiz-option" id="quiz-option-a" data-option="A" onclick="selectOption(this)">
+                    <span class="option-icon">👨‍👧‍👦</span>
+                    <span class="option-label">シングルマザー・<br>シングルファザーとして奮闘中</span>
+                    <span class="option-check">✓</span>
+                </button>
+                <button class="quiz-option" id="quiz-option-b" data-option="B" onclick="selectOption(this)">
+                    <span class="option-icon">🔄</span>
+                    <span class="option-label">離婚歴があり、新しい<br>理解者（パートナー）を探している</span>
+                    <span class="option-check">✓</span>
+                </button>
+                <button class="quiz-option" id="quiz-option-c" data-option="C" onclick="selectOption(this)">
+                    <span class="option-icon">🤱</span>
+                    <span class="option-label">一人で子育てを<br>している境遇である</span>
+                    <span class="option-check">✓</span>
+                </button>
+                <button class="quiz-option" id="quiz-option-d" data-option="D" onclick="selectOption(this)">
+                    <span class="option-icon">🌸</span>
+                    <span class="option-label">子育てが落ち着き、第二の<br>人生を共に歩む人が欲しい</span>
+                    <span class="option-check">✓</span>
+                </button>
+            </div>
+
+            <!-- 選択後の結果表示 -->
+            <div class="quiz-result" id="quiz-result">
+                <div class="result-animation" id="result-animation">
+                    <div class="result-circle">
+                        <span class="result-emoji">🎉</span>
+                    </div>
+                </div>
+                <div class="result-content" id="result-content">
+                    <h3 class="result-title" id="result-title">
+                        あなたにぴったりの<br><span class="highlight">出会いがあります。</span>
+                    </h3>
+                    <p class="result-message" id="result-message-1">
+                        <span id="result-user-status">あなたと同じ状況</span>のお相手が<br>
+                        <strong>「子持ち婚」にはたくさん登録しています。</strong>
+                    </p>
+                    <div class="result-points">
+                        <div class="result-point" id="result-point-1">
+                            <span class="point-icon">✅</span>
+                            <span class="point-text">子どもがいることは<strong>当たり前</strong>。マイナス要素になりません</span>
+                        </div>
+                        <div class="result-point" id="result-point-2">
+                            <span class="point-icon">✅</span>
+                            <span class="point-text">同じ境遇・価値観を<strong>理解してくれるお相手だけ</strong>が登録</span>
+                        </div>
+                        <div class="result-point" id="result-point-3">
+                            <span class="point-icon">✅</span>
+                            <span class="point-text">離婚歴やお子さまの有無を<strong>気にせず堂々と活動</strong>できます</span>
+                        </div>
+                    </div>
+                    <p class="result-reassure" id="result-reassure">
+                        一般的な婚活サービスで感じる気まずさや遠慮は、<br>
+                        「子持ち婚」には<strong>一切ありません。</strong>
+                    </p>
+                    <a href="https://px.a8.net/svt/ejp?a8mat=4AXLW8+AS2W62+3LOM+1HL85U" target="_blank"
+                        rel="noopener noreferrer" class="result-cta-btn" id="result-cta-btn">
+                        <span>婚活をはじめる（3分で無料登録完了）</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== セクション3: 選ばれる理由 ========== -->
+    <section class="reasons-section" id="reasons-section">
+        <div class="container">
+            <div class="section-badge" id="reasons-badge">不安を解消</div>
+            <h2 class="section-title" id="reasons-title">
+                <span class="highlight">子持ち婚</span>が<br>選ばれる3つの理由
+            </h2>
+            <p class="section-lead" id="reasons-lead">
+                忙しいあなたでも、安心してはじめられる仕組みがあります。
+            </p>
+
+            <div class="reasons-cards" id="reasons-cards">
+                <!-- 理由1 -->
+                <div class="reason-card" id="reason-card-1">
+                    <div class="reason-number">01</div>
+                    <div class="reason-icon-wrap">
+                        <div class="reason-icon">💰</div>
+                    </div>
+                    <h3 class="reason-title">お見合いまで<br><span class="accent">「完全無料」</span></h3>
+                    <p class="reason-desc">
+                        登録からお見合いのセッティングまで、<strong>費用は一切かかりません。</strong>
+                        気になるお相手が見つかるまでは0円。リスクなしで婚活をスタートできます。
+                    </p>
+                    <div class="reason-tag">💡 「とりあえず登録だけ」でもOK</div>
+                </div>
+
+                <!-- 理由2 -->
+                <div class="reason-card" id="reason-card-2">
+                    <div class="reason-number">02</div>
+                    <div class="reason-icon-wrap">
+                        <div class="reason-icon">📱</div>
+                    </div>
+                    <h3 class="reason-title">スマホ3分で登録、<br>あとは<span class="accent">「待つだけ」</span></h3>
+                    <p class="reason-desc">
+                        プロフィール登録はたったの3分。あとは<strong>専属仲人があなたにぴったりのお相手を提案</strong>してくれるので、
+                        自分で検索する手間はありません。仕事と子育てで忙しくても大丈夫です。
+                    </p>
+                    <div class="reason-tag">💡 マッチングアプリの大変さはゼロ</div>
+                </div>
+
+                <!-- 理由3 -->
+                <div class="reason-card" id="reason-card-3">
+                    <div class="reason-number">03</div>
+                    <div class="reason-icon-wrap">
+                        <div class="reason-icon">💕</div>
+                    </div>
+                    <h3 class="reason-title">平均3ヶ月で交際スタート、<br>退会率わずか<span class="accent">4.7%</span></h3>
+                    <p class="reason-desc">
+                        登録から平均わずか3ヶ月でお相手が見つかっています。
+                        <strong>退会率はたった4.7%</strong>と驚異の満足度。
+                        あなたも「思ったより早かった」と感じるはずです。
+                    </p>
+                    <div class="reason-tag">💡 多くの方が半年以内に成婚退会</div>
+                </div>
+            </div>
+
+            <a href="https://px.a8.net/svt/ejp?a8mat=4AXLW8+AS2W62+3LOM+1HL85U" target="_blank"
+                rel="noopener noreferrer" class="section-cta-btn" id="reasons-cta-btn">
+                <span>婚活をはじめる（3分で無料登録完了）</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== セクション4: 信頼性の提示 ========== -->
+    <section class="trust-section" id="trust-section">
+        <div class="container">
+            <div class="section-badge" id="trust-badge">信頼と実績</div>
+            <h2 class="section-title" id="trust-title">
+                <span class="highlight">安心の運営体制</span>と<br>メディア実績
+            </h2>
+
+            <div class="trust-cards" id="trust-cards">
+                <!-- 運営グループ -->
+                <div class="trust-card" id="trust-card-1">
+                    <div class="trust-card-header">
+                        <span class="trust-icon">🏢</span>
+                        <h3>日本最大級の専門婚活グループが運営</h3>
+                    </div>
+                    <p class="trust-desc">
+                        「子持ち婚」は、日本最大級の専門婚活グループが運営する<strong>子連れ再婚に特化した婚活サービス</strong>です。
+                        長年の実績とノウハウを活かし、一人ひとりに寄り添ったサポートを提供しています。
+                    </p>
+                    <div class="trust-stats">
+                        <div class="trust-stat">
+                            <span class="stat-number">10,000<small>組+</small></span>
+                            <span class="stat-label">累計お見合い数</span>
+                        </div>
+                        <div class="trust-stat">
+                            <span class="stat-number">62.1<small>%</small></span>
+                            <span class="stat-label">成婚率</span>
+                        </div>
+                        <div class="trust-stat">
+                            <span class="stat-number">98<small>%</small></span>
+                            <span class="stat-label">満足度</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- コラボイベント -->
+                <div class="trust-card trust-card-collab" id="trust-card-2">
+                    <div class="trust-card-badge">🔥 先行告知</div>
+                    <div class="trust-card-header">
+                        <span class="trust-icon">🎭</span>
+                        <h3>ロンブー田村淳さんコラボイベント開催！</h3>
+                    </div>
+                    <p class="trust-desc">
+                        ロンドンブーツ1号2号 田村淳さん運営の<strong>「マスクdeお見合い」</strong>とのコラボイベントの開催実績あり！
+                        メディアでも話題の新しい出会いの形で、楽しみながら婚活ができると大好評です。
+                    </p>
+                    <div class="trust-collab-info">
+                        <p>✨ 登録者限定で次回イベントの優先案内をお届けします</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 利用者の声 -->
+            <div class="testimonials" id="testimonials">
+                <h3 class="testimonials-title">利用者の声</h3>
+                <div class="testimonials-slider" id="testimonials-slider">
+                    <div class="testimonial-card" id="testimonial-1">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">👩</div>
+                            <div class="testimonial-info">
+                                <span class="testimonial-name">Aさん（34歳・女性）</span>
+                                <span class="testimonial-status">シングルマザー → 成婚退会</span>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            「子どもがいることを最初から理解してくれる方ばかりで、<strong>こんなに気楽に婚活できるのかと驚きました。</strong>
+                            仲人さんが間に入ってくれるので、聞きづらいことも事前に確認できて安心でした。」
+                        </p>
+                        <div class="testimonial-result">登録から4ヶ月で成婚退会 💐</div>
+                    </div>
+
+                    <div class="testimonial-card" id="testimonial-2">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">👨</div>
+                            <div class="testimonial-info">
+                                <span class="testimonial-name">Bさん（41歳・男性）</span>
+                                <span class="testimonial-status">バツイチ → 交際中</span>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            「離婚歴がコンプレックスでしたが、ここでは<strong>まったく気にならない環境</strong>でした。
+                            お相手も同じ経験をされていたので、自然と打ち解けることができました。」
+                        </p>
+                        <div class="testimonial-result">登録から2ヶ月でお見合い成立 💐</div>
+                    </div>
+
+                    <div class="testimonial-card" id="testimonial-3">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">👩</div>
+                            <div class="testimonial-info">
+                                <span class="testimonial-name">Cさん（47歳・女性）</span>
+                                <span class="testimonial-status">子育て卒業 → 成婚退会</span>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            「子どもが独立して寂しさを感じていた時に見つけました。
+                            <strong>同じように第二の人生を歩みたいという方</strong>と出会えて、今はとても幸せです。」
+                        </p>
+                        <div class="testimonial-result">登録から6ヶ月で成婚退会 💐</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== セクション5: クロージングCTA ========== -->
+    <section class="final-cta-section" id="final-cta">
+        <div class="cta-bg-effect"></div>
+        <div class="container">
+            <div class="final-cta-content" id="final-cta-content">
+                <p class="cta-eyecatch" id="cta-eyecatch">＼ たった3分で完了 ／</p>
+                <h2 class="cta-headline" id="cta-headline">
+                    まずは無料で<br>プロフィール登録から。
+                </h2>
+                <p class="cta-message" id="cta-message">
+                    あなたの「もう一度幸せになりたい」という気持ちに、<br>
+                    私たちは全力で応えます。<br>
+                    <strong>お見合いまで費用は一切かかりません。</strong>
+                </p>
+
+                <div class="cta-reassure-list" id="cta-reassure-list">
+                    <div class="cta-reassure-item">
+                        <span>✅</span> 初期費用・登録料 <strong>完全無料</strong>
+                    </div>
+                    <div class="cta-reassure-item">
+                        <span>✅</span> スマホから <strong>3分</strong> で登録完了
+                    </div>
+                    <div class="cta-reassure-item">
+                        <span>✅</span> 専属仲人が <strong>お相手を提案</strong>
+                    </div>
+                </div>
+
+                <a href="https://px.a8.net/svt/ejp?a8mat=4AXLW8+AS2W62+3LOM+1HL85U" target="_blank"
+                    rel="noopener noreferrer" class="final-cta-btn" id="final-cta-btn">
+                    <span class="final-cta-main">婚活をはじめる</span>
+                    <span class="final-cta-sub">3分で無料登録完了</span>
+                </a>
+
+                <p class="cta-note" id="cta-note">
+                    ※ 登録は無料です。お見合い成立まで費用はかかりません。<br>
+                    いつでも退会可能です。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== フッター ========== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <span class="logo-icon">💍</span>
+                <span class="logo-text">子持ち婚</span>
+            </div>
+            <p class="footer-desc">子連れ再婚専門の婚活サービス</p>
+            <div class="footer-links">
+                <a href="#">運営会社</a>
+                <a href="#">利用規約</a>
+                <a href="#">プライバシーポリシー</a>
+                <a href="#">特定商取引法に基づく表記</a>
+            </div>
+            <p class="footer-copyright">© 2026 子持ち婚 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- フローティングCTA（スマホ用） -->
+    <div class="floating-cta" id="floating-cta">
+        <a href="https://px.a8.net/svt/ejp?a8mat=4AXLW8+AS2W62+3LOM+1HL85U" target="_blank" rel="noopener noreferrer"
+            class="floating-cta-btn" id="floating-cta-btn">
+            <span class="floating-cta-pr">【PR】</span><span class="floating-cta-text">婚活をはじめる（無料）</span>
+            <span class="floating-cta-arrow">→</span>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
