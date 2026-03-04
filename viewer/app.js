@@ -497,7 +497,18 @@
         <img src="${img.url}" alt="${img.name}" draggable="false">
         <button class="remove-btn" data-index="${i}" title="削除">✕</button>
         <span class="item-number">${i + 1}</span>
+        <div class="preview-play-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M8 5 L19 12 L8 19 Z" fill="currentColor" />
+          </svg>
+        </div>
       `;
+            // プレビュー画像クリックでその画像からスライドショー開始
+            item.addEventListener('click', (e) => {
+                // 削除ボタンクリック時はスライドショーを開始しない
+                if (e.target.closest('.remove-btn')) return;
+                startSlideshow(i);
+            });
             dom.previewGrid.appendChild(item);
         });
 
@@ -515,10 +526,10 @@
     }
 
     // ===== スライドショー =====
-    function startSlideshow() {
+    function startSlideshow(startIndex) {
         if (state.images.length === 0) return;
 
-        state.currentIndex = 0;
+        state.currentIndex = (typeof startIndex === 'number') ? startIndex : 0;
         state.isPlaying = true;
 
         // 画面切替
@@ -528,8 +539,8 @@
         // ブラウザ履歴にエントリーを追加（バックボタン対応）
         history.pushState({ slideshow: true }, '');
 
-        // 最初の画像を表示
-        showSlide(0);
+        // 選択した画像を表示
+        showSlide(state.currentIndex);
         updatePlayPauseIcon();
         showOverlay();
 
