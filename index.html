@@ -8,13 +8,13 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="unforgiven7777.github.io">
-  <meta name="twitter:image" content="https://unforgiven7777.github.io/images/ogp_1772800151802.jpg">
+  <meta name="twitter:image" content="https://unforgiven7777.github.io/images/ogp_1772852934519.jpg">
 
   <!-- Open Graph Protocol (OGP) -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="unforgiven7777.github.io">
   <meta property="og:url" content="https://unforgiven7777.github.io/">
-  <meta property="og:image" content="https://unforgiven7777.github.io/images/ogp_1772800151802.jpg">
+  <meta property="og:image" content="https://unforgiven7777.github.io/images/ogp_1772852934519.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,35 +47,25 @@
       text-align: center;
       padding: 60px 0 40px;
     }
+    .lp-hero-link {
+      display: inline-block;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(139, 92, 246, 0.2);
+    }
+    .lp-hero-link:hover {
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: 0 12px 48px rgba(139, 92, 246, 0.35);
+    }
+    .lp-hero-link:active {
+      transform: translateY(0) scale(0.99);
+    }
     .lp-hero-img {
       width: 100%; max-width: 560px;
+      display: block;
       border-radius: 16px;
-      box-shadow: 0 8px 40px rgba(139, 92, 246, 0.2);
-      margin-bottom: 32px;
-    }
-    .lp-cta {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 18px 48px;
-      background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-      color: white;
-      text-decoration: none;
-      border-radius: 60px;
-      font-size: 1.15rem;
-      font-weight: 700;
-      box-shadow: 0 6px 24px rgba(139, 92, 246, 0.4);
-      transition: all 0.3s ease;
-      animation: cta-pulse 2s ease-in-out infinite;
-    }
-    .lp-cta:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 36px rgba(139, 92, 246, 0.5);
-    }
-    @keyframes cta-pulse {
-      0%, 100% { box-shadow: 0 6px 24px rgba(139, 92, 246, 0.4); }
-      50% { box-shadow: 0 6px 36px rgba(236, 72, 153, 0.5); }
     }
     .lp-pr {
       display: inline-block;
@@ -96,17 +86,13 @@
       border-top: 1px solid rgba(255,255,255,0.06);
       margin-top: 40px;
     }
-    @media (max-width: 480px) {
-      .lp-cta { padding: 16px 36px; font-size: 1rem; }
-    }
   </style>
 </head>
 <body>
   <div class="lp-container">
     <section class="lp-hero">
-      <img class="lp-hero-img" src="https://unforgiven7777.github.io/images/ogp_1772800151802.jpg" alt="">
-      <a class="lp-cta" href="https://www.ebay.com/str/whateverstore" target="_blank" rel="noopener noreferrer">
-        今すぐチェック ▶
+      <a class="lp-hero-link" href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+        <img class="lp-hero-img" src="https://unforgiven7777.github.io/images/ogp_1772852934519.jpg" alt="">
       </a>
       <div><span class="lp-pr">PR</span></div>
     </section>
